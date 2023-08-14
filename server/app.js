@@ -66,7 +66,7 @@ app.get("/tasks", async (req, res) => {
     return res.status(500).json(error);
   }
 });
-//
+
 app.listen({ port: 5000 }, async () => {
   console.log("Sever is up");
   await sequelize.authenticate();
