@@ -1,8 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import todoImg from "../../assets/todo.jpg";
-import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
-import Axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
@@ -11,9 +9,6 @@ function SignUp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  // const [errorMsg, setErrorMsg] = useState("");
-  // const [success, setSuccess] = useState(false);
 
   const signUp = async (e) => {
     e.preventDefault();
